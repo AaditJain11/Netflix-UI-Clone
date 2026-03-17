@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <span>
+                <img width="170" src="assets/images/logo.svg" alt="Netflix Logo">
+            </span>
+            <div class="buttongrp">
+                <select class="lang-dropdown">
+                     <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                </select>
+                <button>Sign In</button>
+            </div>
+        </nav>
+
+        <div class="box"></div>
+        
+        <div class="hero">
+            <span>Unlimited movies,TV</span>
+            <span>Shows and more</span>
+            <span>Starts at ₹149. Cancel at any time.</span>
+            <span>Ready to watch? Enter your email to create or restart your membership.</span>
+            <div class="inputb">
+                <input type="text" placeholder="Email address">
+                <button>Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="separator"></div>
+
+    <!-- Trending Now Section -->
+    <section class="trending-section">
+        <div class="trending-container">
+            <h2>Trending Now</h2>
+            <div class="trending-slider">
+                <button class="slider-btn prev" onclick="scrollSlider('trending', -1)">‹</button>
+                <div class="trending-content" id="trending">
+                    <div class="trending-item">
+                        <img src="assets/images/Stranger_Things.jpg"alt="Stranger Things">
+                        <div class="rank-badge">1</div>
+                    </div>
+                    <div class="trending-item">
+                        <img src="assets/images/Dede.jpeg" alt="Pyaar De 2">
+                        <div class="rank-badge">2</div>
+                    </div>
+                    <div class="trending-item">
+                        <img src="assets/images/Kapil.webp" alt="Great Indian Kapil">
+                        <div class="rank-badge">3</div>
+                    </div>
+                    <div class="trending-item">
+                        <img src="assets/images/Akhanda2.webp" alt="Akhanda 2">
+                        <div class="rank-badge">4</div>
+                    </div>
+                    <div class="trending-item">
+                        <img src="assets/images/JollyLLB3.webp" alt="Jolly LLB 3">
+                        <div class="rank-badge">5</div>
+                    </div>
+                    <div class="trending-item">
+                        <img src="assets/images/HAQ.webp" alt="Haq">
+                        <div class="rank-badge">6</div>
+                    </div>
+                </div>
+                <button class="slider-btn next" onclick="scrollSlider('trending', 1)">›</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <!-- More Reasons to Join Section -->
+    <section class="reasons-section">
+        <div class="reasons-container">
+            <h2>More reasons to join</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <h3>Enjoy on your TV</h3>
+                    <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                    <div class="reason-icon">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="15" width="80" height="55" rx="4" stroke="url(#grad1)" stroke-width="3"/>
+                            <rect x="35" y="70" width="30" height="8" fill="url(#grad1)"/>
+                            <rect x="25" y="78" width="50" height="4" rx="2" fill="url(#grad1)"/>
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#e50914;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#b20710;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="reason-card">
+                    <h3>Download your shows to watch offline</h3>
+                    <p>Save your favourites easily and always have something to watch.</p>
+                    <div class="reason-icon">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="35" fill="url(#grad2)"/>
+                            <path d="M50 30 L50 55 M50 55 L40 45 M50 55 L60 45" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M35 65 L65 65" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#e50914;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#b20710;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="reason-card">
+                    <h3>Watch everywhere</h3>
+                    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                    <div class="reason-icon">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="15" y="25" width="50" height="35" rx="2" stroke="url(#grad3)" stroke-width="3"/>
+                            <path d="M40 60 L40 68 M35 68 L45 68" stroke="url(#grad3)" stroke-width="2"/>
+                            <rect x="55" y="45" width="30" height="40" rx="3" stroke="url(#grad3)" stroke-width="3"/>
+                            <circle cx="70" cy="80" r="2" fill="url(#grad3)"/>
+                            <defs>
+                                <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#e50914;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#b20710;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="reason-card">
+                    <h3>Create profiles for kids</h3>
+                    <p>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p>
+                    <div class="reason-icon">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="15" width="35" height="35" rx="4" fill="url(#grad4)"/>
+                            <rect x="55" y="15" width="35" height="35" rx="4" fill="url(#grad4)"/>
+                            <rect x="10" y="60" width="35" height="35" rx="4" fill="url(#grad4)"/>
+                            <rect x="55" y="60" width="35" height="35" rx="4" fill="url(#grad4)"/>
+                            <defs>
+                                <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#e50914;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#b20710;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    What is Netflix?
+                </div>
+                <div class="faq-answer">
+                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices. You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    How much does Netflix cost?
+                </div>
+                <div class="faq-answer">
+                    <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    Where can I watch?
+                </div>
+                <div class="faq-answer">
+                    <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles. You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    How do I cancel?
+                </div>
+                <div class="faq-answer">
+                    <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    What can I watch on Netflix?
+                </div>
+                <div class="faq-answer">
+                    <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    Is Netflix good for kids?
+                </div>
+                <div class="faq-answer">
+                    <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space. Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don't want kids to see.</p>
+                </div>
+            </div>
+
+            <div class="email-signup">
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                <div class="inputb">
+                    <input type="text" placeholder="Email address">
+                    <button>Get Started ></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>Questions? Call 000-800-919-1694</p>
+            
+            <div class="footer-links">
+                <a href="#">FAQ</a>
+                <a href="#">Help Centre</a>
+                <a href="#">Account</a>
+                <a href="#">Media Centre</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Jobs</a>
+                <a href="#">Ways to Watch</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Speed Test</a>
+                <a href="#">Legal Notices</a>
+                <a href="#">Only on Netflix</a>
+            </div>
+
+            
+
+            <p class="footer-text">Netflix India</p>
+        </div>
+    </footer>
+
+ 
+</body>
+</html>
